@@ -58,9 +58,9 @@ class MixedCategoricalEncoder(BaseEstimator, TransformerMixin):
         return X_new
 
 # === Загрузка модели ===
-model = joblib.load("C:\\Repoz\\Kolchak\\et.pkl")
-scaler = joblib.load("C:\\Repoz\\Kolchak\\scaler.pkl")
-encoder = joblib.load("C:\\Repoz\\Kolchak\\encoder.pkl")
+model = joblib.load("et.pkl")
+scaler = joblib.load("scaler.pkl")
+encoder = joblib.load("encoder.pkl")
 
 # === Интерфейс ===
 st.set_page_config(page_title="ExtraTrees Прогноз", layout="centered")
