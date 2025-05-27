@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 from sklearn.base import BaseEstimator, TransformerMixin
 
-df = pd.read_excel('C:\Repoz2\Kolchak\Sprav.xlsx')
+df = pd.read_excel("Sprav.xlsx")
 
 group_Товарная_категория = sorted(df["Товарная категория"].dropna().unique())
 group_Товарная_группа = sorted(df["Товарная группа"].dropna().unique())
